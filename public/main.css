@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #090e11;
+}
+
+nav {
+    display: flex;
+    background: #2a2f32;
+    margin: auto;
+    padding: 0.5%;
+    width: 79%;
+    justify-content: flex-start;
+    height: 4vh;
+}
+
+nav > img {
+    border-radius: 50%;
+
+}
+
+nav > p {
+    margin: auto 1%;
+    color: #e1e1e3;
+    font-size: 130%;
+}
+
+.chat {
+    margin: auto;
+    width: 80%;
+    height: 90vh;
+    background: url("wallpaper.jpg");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.messages > p {
+    color: #e1e1e3;
+    margin: 0.5%;
+    padding: 1%;
+    width: max-content;
+    max-width: 100%;
+
+}
+
+.incoming-message {
+    background: #262d31;
+    border-radius: 0 10px 10px 10px;
+}
+
+.client-message {
+    background: #056162;
+    text-align: end;
+    border-radius: 10px 0 10px 10px;
+    align-self: flex-end;
+}
+
+.inputs {
+    background: #2a2f32;
+    padding: 0.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs > * {
+    border: 0;
+}
+
+input[type="text"] {
+    background: #33383b;
+    padding: 0.5%;
+    font-size: 110%;
+    color: #f1f1f2;
+    border-radius: 100px;;
+    width: 95%;
+}
+
+button {
+    color: #828689;
+    padding: 0.5%;
+    background: none;
+    cursor:pointer;
+}

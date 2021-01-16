@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Chat</title>
+</head>
+<body>
+    <nav>
+        <img src="https://picsum.photos/40">
+        <p>Public Group Chat</p>
+    </nav>
+    <div class="chat">
+        <div class="messages">
+           <p class="incoming-message">Hello!</p>
+           <p class="client-message">Hey, what's up?</p>
+            
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Type a message" id="input" autofocus autocomplete="off">
+            <button onclick="sendMessage()" id="button"><i class="material-icons">send</i></button>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
